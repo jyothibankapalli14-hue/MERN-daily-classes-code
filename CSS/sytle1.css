@@ -1,0 +1,10 @@
+@import url(./style2.css);
+form{
+    padding: 40px;
+    background-color: rgb(245, 150, 34);
+}
+fieldset{
+    border: 30px;
+    background-color: rgb(114, 171, 220);
+    padding: 30px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol+h1{
+            background-color: blanchedalmond;
+            color: brown;
+        }
+        h4>p{
+            background-color: aqua;
+            color: blue;
+        }
+        h4{
+            background-color: rgb(202, 255, 148);
+            color: green;
+        }
+        ol>li{
+            background-color: chocolate;
+            margin: 20px;
+        }
+        body>h1:first-child{
+            color: brown;
+        }
+        body{
+            background-image: linear-gradient(45deg,yellow,green);
+        }
+        ul p{
+            background-color: rgb(207, 193, 193);
+        }
+        ol~h1{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+    <h1>Ordered list</h1>
+    <ol>
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+    </ol>
+    <h1>Unordered list</h1>
+    <ul>
+    <li>
+        <p>This is paragraph present in unordered list</p>
+    </li>
+    <li>unordered list item-1</li>
+    <li>unordered list item-2</li>
+    <li>unordered list item-3</li>
+    </ul>
+    <h1>Heading in 3rd position</h1>
+    <h3>
+        <p>
+            <h4>Heading 4</h4>
+        </p>
+    </h3>
+</body>
+</html>

@@ -1,0 +1,20 @@
+form{
+    padding: 40ox;
+    background-color: rgb(226, 104, 104);
+}
+feildset{
+    border: 30px;
+    background-color: brown;
+    padding: 30px;
+}
+label::after{
+    content:"*";
+    color:aqua;
+}
+
+label:first-of-type::before{
+    content: "🧕";
+}
+label:last-of-type::before{
+    content: "🔐";
+}
