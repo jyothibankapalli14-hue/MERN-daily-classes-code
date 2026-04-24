@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #leading {
+        list-style-type: decimal-leading-zero;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ordered lists</h1>
+    <h3>Decimal</h3>
+    <ol type="decimal">
+      <li>washing mechine</li>
+      <li>fridge</li>
+      <li>televission</li>
+    </ol>
+    <h3>Decimal with leading zeros</h3>
+    <ol id="leading">
+      <li>televission</li>
+      <li>fridge</li>
+      <li>washing mechine</li>
+    </ol>
+    <h3>lowercase ascii letters</h3>
+    <ol type="a">
+      <li>fridge</li>
+      <li>air conditioner</li>
+      <li>televission</li>
+    </ol>
+    <h3>Lowercase roman numerals</h3>
+    <ol type="i">
+      <li>televission</li>
+      <li>washing machine</li>
+      <li>air conditioner</li>
+    </ol>
+    <h1>unoreded lists</h1>
+    <h3>Disc</h3>
+    <ul>
+      <li>orange</li>
+      <li>apple</li>
+      <li>banana</li>
+    </ul>
+    <h3>square</h3>
+    <ul type="square">
+      <li>papaya</li>
+      <li>banana</li>
+      <li>apple</li>
+    </ul>
+    <h3>circle</h3>
+    <ul type="circle">
+      <li>banana</li>
+      <li>orange</li>
+      <li>apple</li>
+    </ul>
+    <h3>None-no bullet</h3>
+    <ul type="None">
+      <li>apple</li>
+      <li>orange</li>
+      <li>papaya</li>
+    </ul>
+    <h1>Nested lists</h1>
+    <ol type="I">
+      <li>
+        list item 1
+        <ol type="a">
+          <li>nested 1.1</li>
+          <li>nested 1.2</li>
+        </ol>
+      </li>
+      <li>
+        list item 2
+        <ol>
+          <li>nested 2.1</li>
+          <li>
+            nested 2.2
+            <ul type="circle">
+              <li>nested 2.2.1</li>
+              <li>
+                nested 2.2.2
+                <ul type="Disc">
+                  <li>nested 2.2.2.1</li>
+                  <li>nested 2.2.2.2</li>
+                </ul>
+              </li>
+              <li>nested 2.2.3</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>
+        list item 3
+        <ul type="Disc">
+          <li>nested 3.1</li>
+          <li>nested 3.2</li>
+          <li>nested 3.3</li>
+        </ul>
+      </li>
+    </ol>
+    <h1>common Household pets</h1>
+    <dl>
+      <dt>Canis lupus familiaris:</dt>
+      <dd>
+        Domestic dog -a highly variable mammal closely related to the gray wolf.
+      </dd>
+      <dt>Felis silvestris catus:</dt>
+      <dd>Domestic cat -a small, predatory feline mammal.</dd>
+      <dt>Oryctolagus cuniculus domesticus:</dt>
+      <dd>
+        Domestic rabbit -a amall eating mammal with long ears, long hind legs,
+        and a short tail.
+      </dd>
+      <dt>Cavia porcellus:</dt>
+      <dd>
+        Domestic guinea pig -a small stout-bodies short-eared tailless
+        domesticated rodent of south American origin
+      </dd>
+    </dl>
+  </body>
+</html>

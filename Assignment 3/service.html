@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Request Form</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .radio-group {
+        margin-top: 8px;
+      }
+
+      .radio-group label {
+        font-weight: normal;
+        display: inline;
+        margin-right: 10px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Service Request Form</h2>
+
+      <form action="#" method="post">
+        <label for="name">Customer Name</label>
+        <input
+          type="text"
+          id="name"
+          name="customer_name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="phone">Contact Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="contact_number"
+          placeholder="Enter your phone number"
+          pattern="[0-9]{10}"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="issue">Issue Type</label>
+        <select id="issue" name="issue_type" required>
+          <option value="">-- Select Issue --</option>
+          <option value="laptop">Laptop Repair</option>
+          <option value="internet">Internet Issue</option>
+          <option value="software">Software Problem</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          placeholder="Describe your issue..."
+          required
+        ></textarea>
+
+        <label>Priority</label>
+        <div class="radio-group">
+          <input type="radio" id="low" name="priority" value="low" required />
+          <label for="low">Low</label>
+
+          <input type="radio" id="medium" name="priority" value="medium" />
+          <label for="medium">Medium</label>
+
+          <input type="radio" id="high" name="priority" value="high" />
+          <label for="high">High</label>
+        </div>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+  </body>
+</html>
